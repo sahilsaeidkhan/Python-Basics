@@ -1,1 +1,1 @@
-ac
+print(a = b)
