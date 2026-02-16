@@ -28,8 +28,9 @@ print(sum (5))
 books = ["Do Epic Shit,","The Metamorphosis,","The Almanack Of Naval Ravikant"]
 
 def relist(index , books):
-    if(index==2):
+    if(index == len[books]):
         return print(books[index])
+    
     print(books[index] ,  end = " ")
     relist(index+1,books)
 
