@@ -134,3 +134,102 @@ c1 = Circle(5)
 c1.Area()
 c1.Perimeter()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Qs. Define a Employee class with attributes role, department & salary. This class also a
+# showDetails( ) method.
+# Create an Engineer class that inherits properties from Employee & has additional
+# attributes : name & age.
+
+
+class Employee:
+    def __init__(self,role,department,salary):
+      self.role = role
+      self.department = department
+      self.salary = salary
+
+    def showDetails(self):
+       print("Role is",self.role)
+       print("Department is",self.department)
+       print("Salary is",self.salary)
+      
+
+class Engineer(Employee):
+       def __init__(self,name,age):
+           self.name = name
+           self.age = age
+           super().__init__("Engineer","IT","65444")
+
+
+c1 = Employee("sales_executive","sales","2999")
+e1 = Engineer("raj","34")
+c1.showDetails()
+e1.showDetails()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Qs. Create a class called Order which stores item & its price.
+
+# Use Dunder function __ gt () to convey that:
+
+# order1 > order2 if price of order1 > price of order2
+
+
+class Order:
+    def __init__(self,item,price):
+        self.item = item
+        self.price= price
+
+    def __gt__(self,o2):
+         return self.price>o2.price
+    
+    
+o1 = Order("Samsung",50000)
+o2 = Order("Realme",30000)
+print(o1>o2)
