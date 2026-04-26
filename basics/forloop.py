@@ -151,3 +151,7 @@ for i in range(6):
         print("*", end="")
     
     print()
+
+# Question (medium)
+# Given a list of integers, write a function that returns the length of the longest contiguous
+# subarray where the absolute difference between any two elements is at most 1.
